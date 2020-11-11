@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
 {
 	int socket_desc, new_socket, c;
 	struct sockaddr_in server, client;
-	char *message;
+
 
 	//Create socket
 	socket_desc = socket(AF_INET, SOCK_STREAM, 0);
@@ -29,15 +29,14 @@ int main(int argc, char *argv[])
 		return 1;
 	}
 
-	puts("Done bind");
+	puts("Done Bind\n");
 
 	//Listen
 	listen(socket_desc, 3);
 
 	//Accept and incoming connection
-	puts("Waiting for incoming connections...");
+	puts("Waiting for incoming connections...\n");
 	c = sizeof(struct sockaddr_in);
-	while( (new_socket = accept(socket_desc, (struct sockaddr *)&client, (socklen_t*)&c)) );
 
 	if(new_socket < 0)
 	{
@@ -46,3 +45,4 @@ int main(int argc, char *argv[])
 
 	return 0;
 }
+
