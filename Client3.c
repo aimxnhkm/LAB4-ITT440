@@ -26,14 +26,14 @@ int main(int argc, char *argv[])
 	//Connect to remote server
 	if(connect(socket_desc, (struct sockaddr *)&server, sizeof(server)) < 0 )
 	{
-		puts("Connect Error\n");
+		puts("Connect error\n");
 		return 1;
 	}
 
 	puts("Connected");
 
 	//Send some data
-	message = "Connect";
+	message = "Connected";
 
 	if(send(socket_desc, message, strlen(message), 0) < 0 )
 	{
