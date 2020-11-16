@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 		close(socket_desc);
 	}
 
-	printf("SO_KEEPALIVE is %s\n", (optval? "ON" : "OFF"));
+	printf("SO_KEEPALIVE is a %s\n", (optval? "ON" : "OFF"));
 
 	return 0;
 }
