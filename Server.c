@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 		return 1;
 	}
 
-	puts("Done Bind\n");
+	puts("Bind Done\n");
 
 	//Listen
 	listen(socket_desc, 3);

@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 		printf("Could not create socket");
 	}
 
-	//Prepare teh sockaddr_in structure
+	//Prepare the sockaddr_in structure
 	server.sin_family = AF_INET;
 	server.sin_addr.s_addr = INADDR_ANY;
 	server.sin_port = htons( 8888 );
@@ -30,13 +30,13 @@ int main(int argc, char *argv[])
 		return 1;
 	}
 
-	puts("Bind Done\n");
+	puts("Done Bind\n");
 
 	//Listen
 	listen(socket_desc,3);
 
 	//Accept and incoming connection
-	puts("Waiting for incoming connections...\n");
+	puts("Waiting for incoming connections..\n");
 
 	c = sizeof(struct sockaddr_in);
 

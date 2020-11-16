@@ -7,7 +7,7 @@
 int main(int argc, char *argv[])
 {
 	char *hostname = "www.google.com";
-	char ip[100];
+	char ip[200];
 	struct hostent *he;
 	struct in_addr**addr_list;
 	int i;
