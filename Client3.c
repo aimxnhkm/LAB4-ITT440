@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 	//Connect to remote server
 	if(connect(socket_desc, (struct sockaddr *)&server, sizeof(server)) < 0 )
 	{
-		puts("Connect Error\n");
+		puts("Connect error\n");
 		return 1;
 	}
 
