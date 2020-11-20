@@ -31,7 +31,7 @@ int main(int argc, char  *argv[])
 	puts("Connected");
 
 	//Send some data
-	message = "Connect";
+	message = "Connected";
 
 	if(send(socket_desc, message, strlen(message), 0) < 0)
 	{
